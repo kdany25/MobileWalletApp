@@ -7,6 +7,9 @@ import Welcome from "./screens/Welcome";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 
+//React Navigation
+import RootStack from "./navigators/RootStack";
+
 export default function App() {
 	let [fontLoaded] = useFonts({
 		"Lato-Bold": require("./assets/fonts/Lato-Bold.ttf"),
@@ -16,5 +19,5 @@ export default function App() {
 	if (!fontLoaded) {
 		return <AppLoading />;
 	}
-	return <Welcome />;
+	return <RootStack />;
 }
