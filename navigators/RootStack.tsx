@@ -64,7 +64,7 @@ const RootStack: FunctionComponent = () => {
 					name="Home"
 					component={Home}
 					options={{
-						headerTitle: (props) => (
+						headerLeft: (props) => (
 							<Greeting
 								mainText="Hey coby!"
 								subText="Welcome back"
@@ -72,7 +72,7 @@ const RootStack: FunctionComponent = () => {
 							/>
 						),
 
-						headerLeft: () => <></>,
+						headerTitle: () => <></>,
 					}}
 				/>
 			</Stack.Navigator>
