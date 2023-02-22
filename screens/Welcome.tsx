@@ -5,9 +5,12 @@ import styled from "styled-components/native";
 //custom components
 import { colors } from "../components/colors";
 import { Container } from "../components/shared";
+import BigText from "../components/Texts/BigText";
+import SmallText from "../components/Texts/SmallText";
+import RegularButton from "../components/Buttons/RegularButton";
 
 //images
-import background from "./../assets/bgs/background_v1.png"
+import background from "./../assets/bgs/background_v1.png";
 
 const WelcomeContainer = styled(Container)`
 	background-color: ${colors.secondary};
@@ -25,13 +28,14 @@ const BottomSection = styled.View`
 	width: 100%;
 	padding: 25px;
 	flex: 1;
+	justify-content: flex-end;
 `;
 
-const TopImage = styled.Image `
-width: 100%;
-height: 100%;
-resize-mode: stretch
-`
+const TopImage = styled.Image`
+	width: 100%;
+	height: 100%;
+	resize-mode: stretch;
+`;
 
 const Welcome: FunctionComponent = () => {
 	return (
@@ -39,9 +43,20 @@ const Welcome: FunctionComponent = () => {
 			<StatusBar style="light" />
 			<WelcomeContainer>
 				<TopSection>
-					<TopImage source={background}/>
+					<TopImage source={background} />
 				</TopSection>
-				<BottomSection></BottomSection>
+				<BottomSection>
+					<BigText textStyles={{ width: "70%", marginBottom: 25 }}>
+						Best way to track your money
+					</BigText>
+					<SmallText textStyles={{ width: "70%", marginBottom: 25 }}>
+						Best payment method, connects your money to your
+						friends, family
+					</SmallText>
+					<RegularButton onPress={() => {}}>
+						Get Started
+					</RegularButton>
+				</BottomSection>
 			</WelcomeContainer>
 		</>
 	);
