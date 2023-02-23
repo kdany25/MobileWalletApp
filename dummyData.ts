@@ -1,5 +1,6 @@
 import logo1 from "./assets/cards/visa_white.png";
 import logo2 from "./assets/cards/mc.png";
+import { colors } from "./components/colors";
 export const cardsData = [
 	{
 		id: 1,
@@ -21,5 +22,41 @@ export const cardsData = [
 		balance: 5600.83,
 		alias: "School Prepaid",
 		logo: logo1,
+	},
+];
+
+export const transactionData = [
+	{
+		id: 1,
+		amount: "-$86.00",
+		date: "14 Sep 2021",
+		title: "Taxi",
+		subtitle: "uber car",
+		art: {
+			background: colors.primary,
+			icon: "car",
+		},
+	},
+	{
+		id: 2,
+		amount: "-$286.00",
+		date: "14 Sep 2021",
+		title: "Shopping",
+		subtitle: "Ali express",
+		art: {
+			background: colors.tertiary,
+			icon: "cart",
+		},
+	},
+	{
+		id: 3,
+		amount: "-$586.00",
+		date: "14 Aug 2021",
+		title: "Travel",
+		subtitle: "Emirates",
+		art: {
+			background: colors.accent,
+			icon: "airplane",
+		},
 	},
 ];
