@@ -63,7 +63,7 @@ const CardItem: FunctionComponent<CardProps> = (props) => {
 				<TouchableView>
 					<CardRow>
 						<RegularText textStyles={{ color: colors.white }}>
-							****** {props.accountNo}
+							****** {props.accountNo.slice(6, 10)}
 						</RegularText>
 					</CardRow>
 					<CardRow>

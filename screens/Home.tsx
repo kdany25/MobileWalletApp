@@ -6,9 +6,10 @@ import styled from "styled-components/native";
 import { colors } from "../components/colors";
 import { Container } from "../components/shared";
 import CardSection from "../components/Cards/CardSection";
+import TransactionSection from "../components/Transactions/TransactionSection";
 
 //dummy data
-import { cardsData } from "../dummyData";
+import { cardsData, transactionData } from "../dummyData";
 
 const HomeContainer = styled(Container)`
 	background-color: ${colors.graylight};
@@ -21,6 +22,7 @@ const Home: FunctionComponent = () => {
 		<HomeContainer>
 			<StatusBar style="dark" />
 			<CardSection data={cardsData} />
+			<TransactionSection data={transactionData} />
 		</HomeContainer>
 	);
 };
