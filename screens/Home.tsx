@@ -18,7 +18,13 @@ const HomeContainer = styled(Container)`
 	flex: 1;
 `;
 
-const Home: FunctionComponent = () => {
+//types
+import { RootStackParamList } from "../navigators/RootStack";
+import { StackScreenProps } from "@react-navigation/stack";
+
+export type props = StackScreenProps<RootStackParamList, "Home">;
+
+const Home: FunctionComponent<props> = () => {
 	return (
 		<HomeContainer>
 			<StatusBar style="dark" />
