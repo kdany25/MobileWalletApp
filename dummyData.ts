@@ -1,6 +1,12 @@
 import logo1 from "./assets/cards/visa_white.png";
 import logo2 from "./assets/cards/mc.png";
 import { colors } from "./components/colors";
+
+//people images
+import Portrait1 from "./assets/portraits/1.jpg";
+import Portrait2 from "./assets/portraits/2.jpg";
+import Portrait3 from "./assets/portraits/3.jpg";
+
 export const cardsData = [
 	{
 		id: 1,
@@ -58,5 +64,29 @@ export const transactionData = [
 			background: colors.accent,
 			icon: "airplane",
 		},
+	},
+];
+
+export const sendMoneyData = [
+	{
+		id: 1,
+		amount: "2450.56",
+		name: "Coby Andoh",
+		background: colors.tertiary,
+		img: Portrait1,
+	},
+	{
+		id: 2,
+		amount: "4450.56",
+		name: "Harleen Scot",
+		background: colors.primary,
+		img: Portrait2,
+	},
+	{
+		id: 3,
+		amount: "6250.56",
+		name: "James Corbyn",
+		background: colors.accent,
+		img: Portrait3,
 	},
 ];
