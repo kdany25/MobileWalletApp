@@ -12,7 +12,7 @@ import { colors } from "../colors";
 import RegularText from "../Texts/RegularText";
 import SmallText from "../Texts/SmallText";
 
-//styles
+
 const AmountSectionBackground = styled.View`
 	width: 100%;
 	padding-top: 5px;
